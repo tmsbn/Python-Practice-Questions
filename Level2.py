@@ -1,4 +1,5 @@
-import math, re
+import math
+import re
 from ast import literal_eval
 
 
@@ -190,7 +191,6 @@ def cumulative_addition():
 # 1,2,3,4,5,6,7,8,9
 # Then, the output should be:
 # 1,9,25,49,81
-
 def square_numbers():
     numbers = literal_eval(input("Enter comma separated list of numbers:"))
     print(",".join([str(n*n) for n in numbers if n % 2 == 1]))

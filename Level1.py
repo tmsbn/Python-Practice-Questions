@@ -1,3 +1,20 @@
+
+
+# Question 1
+# Level 1
+#
+# Question:
+# Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+# between 2000 and 3200 (both included).
+# The numbers obtained should be printed in a comma-separated sequence on a single line.
+#
+# Hints:
+# Consider use range(#begin, #end) method
+def divisibility():
+    numbers = [str(num) for num in range(2000,3201) if num % 7 ==0 and num % 5 != 0]
+    print(",".join(numbers))
+
+
 # Question 2
 # Level 1
 #
@@ -11,13 +28,11 @@
 #
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
-
-
 def factorial(n):
     if n == 1:
         return 1
     else:
-        return n*factorial(n-1)
+        return n * factorial(n-1)
 
 
 # Question 3
@@ -35,8 +50,6 @@ def factorial(n):
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # Consider use dict()
-
-
 def dictionary(n):
 
     dict = {}
@@ -60,34 +73,11 @@ def dictionary(n):
 # Hints:
 # In case of input data being supplied to the question, it should be assumed to be a console input.
 # tuple() method can convert list to tuple
-
-
 def list_tuple():
     numbers = input("Enter a set of comma separated numbers:")
     num = numbers.split(",")
     print(num)
     print(tuple(num))
-
-
-# Question 1
-# Level 1
-#
-# Question:
-# Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
-# between 2000 and 3200 (both included).
-# The numbers obtained should be printed in a comma-separated sequence on a single line.
-#
-# Hints:
-# Consider use range(#begin, #end) method
-
-
-def divisibility():
-
-    num = []
-    for i in range(2000, 3201):
-        if i % 7 == 0 and i % 5 != 0:
-            num.append(str(i))
-    print(",".join(num))
 
 
 # Question 5
@@ -98,8 +88,6 @@ def divisibility():
 # getString: to get a string from console input
 # printString: to print the string in upper case.
 # Also please include simple test function to test the class methods.
-
-
 class InputTest:
 
     def __init__(self):
@@ -111,9 +99,7 @@ class InputTest:
     def print_string(self):
         print(self.text.upper())
 
-# MAIN function
 
+# MAIN function
 if __name__ == "__main__":
-    a = InputTest()
-    a.get_string()
-    a.print_string()
+    divisibility()
